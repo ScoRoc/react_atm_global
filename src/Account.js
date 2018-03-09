@@ -18,7 +18,7 @@ export default class Account extends Component {
         <input type="text" placeholder="enter an amount" ref="amount" />
         <input type="button" value="Deposit" onClick={(e) => this.props.handleDepositClick(e, this.refs.amount.value, this.props.name)} />
         <input type="button" value="Withdraw" onClick={(e) => this.props.handleWithdrawClick(e, this.refs.amount.value, this.props.name)} />
-        <input type="button" value="Transfer" onClick={() => this.handleTransferClick(this.refs.amount.value, this.props.name)} />
+        <input type="button" value="Transfer" onClick={() => this.props.handleTransferClick(this.refs.amount.value, this.props.name)} />
       </div>
     )
   }
